@@ -1,7 +1,7 @@
 <details><summary>Deploy To Heroku</summary>
 <p>
 <br>
-<a href="https://heroku.com/deploy?template=https://github.com/kamileecher2/kutuphanem">
+<a href="https://dashboard.heroku.com/new?template=https%3A%2F%2Fgithub.com%2Frinrinx%2FKUTUPHANE-DENEME">
   <img src="https://www.herokucdn.com/deploy/button.svg" alt="Deploy">
 </a>
 </p>
