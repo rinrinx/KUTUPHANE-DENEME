@@ -26,7 +26,7 @@ async def answer(bot, query):
     if not await inline_users(query):
         await query.answer(results=[],
                            cache_time=0,
-                           switch_pm_text='okDa',
+                           switch_pm_text='Defol Git',
                            switch_pm_parameter="hehe")
         return
 
@@ -104,9 +104,6 @@ def get_reply_markup(query):
     buttons = [
         [
             InlineKeyboardButton('🔎 Tekrar Ara', switch_inline_query_current_chat=query)
-        ],[
-            InlineKeyboardButton('🤖 LiveBox', url='https://t.me/LiiveBox'),
-            InlineKeyboardButton('🤖 Kanal', url='https://t.me/kamileecherch')
         ]
         ]
     return InlineKeyboardMarkup(buttons)
