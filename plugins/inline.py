@@ -70,11 +70,11 @@ async def answer(bot, query):
                 title=file.file_name,
                 file_id=file.file_id,
                 caption=f_caption,
-                description=f'Size: {get_size(file.file_size)}\nType: {file.file_type}',
+                description=f'Boyut: {get_size(file.file_size)}\nTip: {file.file_type}',
                 reply_markup=reply_markup))
 
     if results:
-        switch_pm_text = f"{emoji.FILE_FOLDER} Results - {total}"
+        switch_pm_text = f"{emoji.FILE_FOLDER} Sonuc - {total}"
         if string:
             switch_pm_text += f" for {string}"
         try:
@@ -89,7 +89,7 @@ async def answer(bot, query):
         except Exception as e:
             logging.exception(str(e))
     else:
-        switch_pm_text = f'{emoji.CROSS_MARK} No results'
+        switch_pm_text = f'{emoji.CROSS_MARK} Sonuc Yok'
         if string:
             switch_pm_text += f' for "{string}"'
 
