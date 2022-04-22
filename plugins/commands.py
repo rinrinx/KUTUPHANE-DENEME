@@ -44,10 +44,7 @@ async def start(client, message):
             ],[
             InlineKeyboardButton('🔍 Ara', switch_inline_query_current_chat=''),
             InlineKeyboardButton('🤖 Yönetici', url='https://t.me/kamileecher')
-            ],[
-            InlineKeyboardButton('ℹ️ Yardım', callback_data='help'),
-            InlineKeyboardButton('😊 Hakkında', callback_data='about')
-        ]]
+            ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_photo(
             photo=random.choice(PICS),
